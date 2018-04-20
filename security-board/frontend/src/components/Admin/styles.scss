@@ -1,11 +1,11 @@
-.malware {
+.admin {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    max-width: $max-page-width + 80px;
     width: 100%;
-    max-width: $max-card-width;
+    height: 100%;
     margin: 0 auto;
     align-items: center;
-    @include boxBorder(yes);
     @include breakpoint("phone") {
       background-color: transparent;
     }

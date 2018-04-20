@@ -8,7 +8,7 @@ const Admin = props => {
 };
 
 const LoadingContent = props => (
-    <div className={styles.malware}>
+    <div className={styles.admin}>
         <Loading />
     </div>
 );

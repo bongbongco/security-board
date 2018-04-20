@@ -1,12 +1,82 @@
-.dashboard {
-    display: flex;
-    flex-direction: column;
-    max-width: $max-page-width + 80px;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    align-items: center;
-    @include breakpoint("phone") {
-        background-color: transparent;
+.contents {
+        background-color: $kibana-bg-color;
+        display: flex;
+        flex-direction: column;
+        max-width: $max-page-width + 80px;
+        width: 100%;
+        margin: 0px auto;
+        padding-top: 10px;
+        align-items: center;
+        border-radius: 0px 10px 10px 10px;
+    .summary {
+        display: flex;
+        flex-direction: row;
+        max-width: $max-page-width + 80px;
+        width: 100%;
+        justify-content: space-around;
+        .row {
+            color: $content-color;
+            margin-left: 8px;
+            padding: 10px;
+            width: 25%;
+            border-radius: 3px;
+            &:last-child {
+                margin-right: 8px;
+            }
+            &.serious {
+                background-color: $serious-color;
+            }
+            &.alert {
+                background-color: $alert-color;
+            }
+            &.caution {
+                background-color: $caution-color;
+            }
+            &.peacetime {
+                background-color: $peacetime-color;
+            }
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .title{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 10px 0;
+                font-size: $small-font-size;
+            }
+            .value {
+                font-size: $dashboard-value-font-size;
+                padding: 0 10px;
+            }
+            .stat {
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+                margin-top: 25px;
+                padding: 10px 10px 0;
+                font-size: $dashboard-stat-font-size;
+            }
+        }
+    }
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        max-width: $max-page-width + 80px;
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+        align-items: center;
+        @include breakpoint("phone") {
+            background-color: transparent;
+        }
+    }
+    .info {
+        background-color: $kibana-content-color;
+        display: flex;
+        flex-direction: column;
+        max-width: $max-page-width + 64px;
+        margin: 8px 8px;
+        width: 100%;
+        @include kibanaBoxBorder();
     }
 }
