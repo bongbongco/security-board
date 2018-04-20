@@ -1,0 +1,67 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: $bg-color;
+    @include breakpoint("phone") {
+      margin-bottom: 0;
+    }
+    .inner {
+      padding-top: 10px;
+      max-width: $max-page-width + 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      .column {
+        display: flex;
+        width: 33%;
+        &:nth-child(2) {
+          @include breakpoint("phone") {
+            display: none;
+          }
+        }
+        .nav{
+          margin-right: 1px;
+          height: 40px;
+          padding: 0px 15px;
+          -webkit-appearance: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: $highlight-color;
+          text-decoration: none;
+          color: $content-color;
+          border-radius: 10px 10px 0 0;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background: $kibana-bg-color;
+          }
+          &:active {
+            background-color: $kibana-bg-color;
+            box-shadow: none;
+          }
+
+          .menu-tab {
+            -webkit-appearance: none;
+            display: flex;
+            flex-direction: row;
+            height: 35px;
+            margin-right: 3px;
+            align-items: center;
+            .name {
+              color: $bg-color;
+              padding: 3px;
+            }
+          }
+        }
+        .nav-active {
+        background-color: $kibana-bg-color;
+        box-shadow: none;
+      }
+    }
+  }
+}
