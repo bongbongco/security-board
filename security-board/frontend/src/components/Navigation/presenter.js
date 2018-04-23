@@ -32,17 +32,18 @@ const Navigation = (props) => (
                 <span className={styles.name}>DLP</span>
             </div>
           </NavLink>
+        </div>
+    </div>
+  </div>
+);
+/*
           <NavLink to="/admin" className={styles.nav} activeClassName={styles.navActive}>
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-build" fontSize="28px" color="#222831" />
                 <span className={styles.name}>ADMIN</span>
             </div>
           </NavLink>
-        </div>
-    </div>
-  </div>
-);
-
+*/
 Navigation.propTypes = {
   onInputChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
