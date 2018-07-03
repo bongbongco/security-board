@@ -7,7 +7,7 @@ import Footer from 'components/Footer';
 import Dashboard from 'components/Dashboard';
 import Auth from 'components/Auth';
 import Sert from 'components/Sert';
-import Etas from 'components/Etas';
+import Fenx from 'components/Fenx';
 import Dlp from 'components/Dlp';
 import Admin from 'components/Admin';
 
@@ -24,9 +24,9 @@ App.propTypes = {
 const PrivateRoutes = props => (
     <Switch>
         <Route exact path="/" component={Dashboard} />
-        <Route path="/etas" component={Etas} />
-        <Route path="/sert" component={Sert} />
-        <Route path="/dlp" component={Dlp} />
+        <Route path="/fenx" component={Fenx} />
+        <Route path="/feex" component={Sert} />
+        <Route path="/alv3" component={Dlp} />
         <Route path="/admin" component={Admin} />
     </Switch>
 )

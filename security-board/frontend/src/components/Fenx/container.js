@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Etas from './presenter';
+import Fenx from './presenter';
 
 class Container extends Component {
     render() {
         return (
-            <Etas />
+            <Fenx />
         );
     }
 }

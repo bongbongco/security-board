@@ -13,25 +13,19 @@ const Dashboard = props => {
 const DashboardContent = props => (
     <div className={styles.contents}>
         <div className={styles.summary}>
-            <div className={cx('row', 'serious')}>
-                <div className={styles.title}>
-                    <span>Etas Project</span>
-                    <Ionicon icon="ios-arrow-dropup-circle" fontSize="28px" color="#efefef" />
-                </div>
-                <div className={styles.value}>60</div>
-                <div className={styles.stat}><b>13</b>% INCREASE</div>
-            </div>
             <div className={cx('row', 'alert')}>
                 <div className={styles.title}>
                     <span>Vulnerability</span>
                     <Ionicon icon="ios-arrow-dropup-circle" fontSize="28px" color="#efefef" />
                 </div>
-                <div className={styles.value}>400</div>
+                <div className={styles.value}>
+                    400
+                </div>
                 <div className={styles.stat}><b>13</b>% INCREASE</div>
             </div>
             <div className={cx('row', 'caution')}>
                 <div className={styles.title}>
-                    <span>Sert</span>
+                    <span>Malware</span>
                     <Ionicon icon="ios-arrow-dropdown-circle" fontSize="28px" color="#efefef" />
                 </div>
                 <div className={styles.value}>50</div>
@@ -39,7 +33,7 @@ const DashboardContent = props => (
             </div>
             <div className={cx('row', 'peacetime')}>
                 <div className={styles.title}>
-                    <span>Dlp</span>
+                    <span>Email</span>
                     <Ionicon icon="ios-arrow-dropdown-circle" fontSize="28px" color="#efefef" />
                 </div>
                 <div className={styles.value}>150</div>

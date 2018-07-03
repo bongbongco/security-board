@@ -14,7 +14,7 @@ const Navigation = (props) => (
                 <span className={styles.name}>Dashboard</span>
             </div>
           </NavLink>
-          <NavLink to="/etas" className={styles.nav} activeClassName={styles.navActive}> 
+          <NavLink to="/fenx" className={styles.nav} activeClassName={styles.navActive}> 
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-bug" fontSize="28px" color="#222831" />
                 <span className={styles.name}>Etas</span>
