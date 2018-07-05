@@ -14,22 +14,22 @@ const Navigation = (props) => (
                 <span className={styles.name}>Dashboard</span>
             </div>
           </NavLink>
-          <NavLink to="/fenx" className={styles.nav} activeClassName={styles.navActive}> 
+          <NavLink to="/alv3" className={styles.nav} activeClassName={styles.navActive}> 
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-bug" fontSize="28px" color="#222831" />
-                <span className={styles.name}>Etas</span>
+                <span className={styles.name}>V3</span>
             </div>
           </NavLink>
-          <NavLink to="/sert" className={styles.nav} activeClassName={styles.navActive}>
+          <NavLink to="/feex" className={styles.nav} activeClassName={styles.navActive}>
             <div className={styles.menuTab}>
-                <Ionicon icon="ios-nuclear" fontSize="28px" color="#222831" />
-                <span className={styles.name}>SERT</span>
+                <Ionicon icon="ios-mail-open" fontSize="28px" color="#222831" />
+                <span className={styles.name}>EX</span>
             </div>
           </NavLink>
-          <NavLink to="/dlp" className={styles.nav} activeClassName={styles.navActive}>
+          <NavLink to="/fenx" className={styles.nav} activeClassName={styles.navActive}>
             <div className={styles.menuTab}>
-                <Ionicon icon="ios-lock" fontSize="28px" color="#222831" />
-                <span className={styles.name}>DLP</span>
+                <Ionicon icon="ios-unlock" fontSize="28px" color="#222831" />
+                <span className={styles.name}>NX</span>
             </div>
           </NavLink>
         </div>

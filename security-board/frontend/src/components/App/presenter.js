@@ -6,9 +6,9 @@ import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 import Dashboard from 'components/Dashboard';
 import Auth from 'components/Auth';
-import Sert from 'components/Sert';
+import Feex from 'components/Feex';
 import Fenx from 'components/Fenx';
-import Dlp from 'components/Dlp';
+import Alv3 from 'components/Alv3';
 import Admin from 'components/Admin';
 
 const App = props => [
@@ -25,8 +25,8 @@ const PrivateRoutes = props => (
     <Switch>
         <Route exact path="/" component={Dashboard} />
         <Route path="/fenx" component={Fenx} />
-        <Route path="/feex" component={Sert} />
-        <Route path="/alv3" component={Dlp} />
+        <Route path="/feex" component={Feex} />
+        <Route path="/alv3" component={Alv3} />
         <Route path="/admin" component={Admin} />
     </Switch>
 )

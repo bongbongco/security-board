@@ -39,7 +39,6 @@ django-taggit-serializer = "*"
 django-taggit = "*"
 django-rest-auth = "*"
 django-imagekit = "*"
-sphinx = "==1.7.2"
 
 [dev-packages]
 

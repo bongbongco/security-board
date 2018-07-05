@@ -1,5 +1,5 @@
-.contents {
-   background-color: $kibana-bg-color;
+.feex {
+    background-color: $kibana-bg-color;
     display: flex;
     flex-direction: column;
     max-width: $max-page-width + 80px;
@@ -18,7 +18,7 @@
         margin: 0 auto; 
         align-items: center;
         @include breakpoint("phone") {
-            background-color: transparent;
+            ckground-color: transparent;
         }
     }
     .info {

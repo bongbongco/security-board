@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import Dlp from "./presenter";
+import Alv3 from "./presenter";
 
 class Container extends Component {
     state = {
@@ -8,7 +8,7 @@ class Container extends Component {
     };
     render() { 
         return (
-            <Dlp />
+            <Alv3 />
         );
     }
 }

@@ -213,7 +213,7 @@ module.exports = {
                       loader: require.resolve('sass-loader'),
                       options: {
                         sourceMap: true,
-                        data: `@import "${paths.appSrc}/config/_variables.scss";`
+                        data: `@import "c:/workspace/security-board/security-board/frontend/src/config/_variables.scss";`
                       }
                     }
                   ],

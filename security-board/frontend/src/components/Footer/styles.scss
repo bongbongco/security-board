@@ -3,8 +3,9 @@
     display: flex;
     box-sizing: border-box;
     background-color: $bg-color;
-    margin-top: 55px;
-    margin-bottom: 30px;
+    margin: auto 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     align-items: center;
     justify-content: center;
     @include breakpoint("phone-tablet") {
@@ -31,11 +32,17 @@
             }
             .list-item {
               margin-right: 15px;
-              color: $content-color;
-              cursor: pointer;
               @include breakpoint("phone-tablet") {
                 margin-bottom: 10px;
                 margin-right: 15px;
+              }
+              .link {
+                -webkit-appearance: none;
+                text-decoration: none;
+                color: $content-color;
+                &:hover {
+                  color: $highlight-color;
+                }
               }
             }
           }
