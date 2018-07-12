@@ -5,7 +5,7 @@ Base settings to build other settings files upon.
 import environ
 
 ROOT_DIR = environ.Path(__file__) - 3  # (bbc_security_management/config/settings/base.py - 3 = bbc_security_management/)
-APPS_DIR = ROOT_DIR.path('bbc_security_management')
+APPS_DIR = ROOT_DIR.path('security-board')
 
 env = environ.Env()
 

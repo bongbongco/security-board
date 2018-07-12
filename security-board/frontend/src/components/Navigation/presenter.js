@@ -8,42 +8,44 @@ const Navigation = (props) => (
   <div className={styles.navigation}>
     <div className={styles.inner}>
       <div className={styles.column}>
-          <NavLink exact to="/" className={styles.nav} activeClassName={styles.navActive}>
+          <NavLink exact to="/" className={styles.dashboard} activeClassName={styles.dashboard}>
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-pie" fontSize="28px" color="#222831" />
                 <span className={styles.name}>Dashboard</span>
             </div>
           </NavLink>
-          <NavLink to="/alv3" className={styles.nav} activeClassName={styles.navActive}> 
+          <NavLink to="/alv3" className={styles.alv3} activeClassName={styles.alv3}> 
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-bug" fontSize="28px" color="#222831" />
-                <span className={styles.name}>V3</span>
+                <span className={styles.name}>Malware</span>
             </div>
           </NavLink>
-          <NavLink to="/feex" className={styles.nav} activeClassName={styles.navActive}>
+          <NavLink to="/fenx" className={styles.fenx} activeClassName={styles.fenx}>
+            <div className={styles.menuTab}>
+                <Ionicon icon="ios-pulse" fontSize="28px" color="#222831" />
+                <span className={styles.name}>Botnet</span>
+            </div>
+          </NavLink>
+          <NavLink to="/feex" className={styles.feex} activeClassName={styles.feex}>
             <div className={styles.menuTab}>
                 <Ionicon icon="ios-mail-open" fontSize="28px" color="#222831" />
-                <span className={styles.name}>EX</span>
-            </div>
-          </NavLink>
-          <NavLink to="/fenx" className={styles.nav} activeClassName={styles.navActive}>
-            <div className={styles.menuTab}>
-                <Ionicon icon="ios-unlock" fontSize="28px" color="#222831" />
-                <span className={styles.name}>NX</span>
+                <span className={styles.name}>Email</span>
             </div>
           </NavLink>
         </div>
     </div>
   </div>
 );
-/*
+
+          /*
           <NavLink to="/admin" className={styles.nav} activeClassName={styles.navActive}>
             <div className={styles.menuTab}>
-                <Ionicon icon="ios-build" fontSize="28px" color="#222831" />
+                <Ionicon icon="ios-construct" fontSize="28px" color="#222831" />
                 <span className={styles.name}>ADMIN</span>
             </div>
           </NavLink>
-*/
+          */
+
 Navigation.propTypes = {
   onInputChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,

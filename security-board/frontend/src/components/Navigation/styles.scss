@@ -23,7 +23,7 @@
             display: none;
           }
         }
-        .nav{
+        .alv3{
           margin-right: 1px;
           height: 40px;
           padding: 0px 15px;
@@ -31,7 +31,114 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          background-color: $highlight-color;
+          //background-color: $highlight-color;
+          background-color: #0064D2;
+          text-decoration: none;
+          color: $content-color;
+          border-radius: 10px 10px 0 0;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background: $kibana-bg-color;
+          }
+          &:active {
+            background-color: $kibana-bg-color;
+            box-shadow: none;
+          }
+          .menu-tab {
+            -webkit-appearance: none;
+            display: flex;
+            flex-direction: row;
+            height: 35px;
+            margin-right: 3px;
+            align-items: center;
+            .name {
+              color: $bg-color;
+              padding: 3px;
+            }
+          }
+        }
+
+        .fenx{
+          margin-right: 1px;
+          height: 40px;
+          padding: 0px 15px;
+          -webkit-appearance: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          //background-color: $highlight-color;
+          background-color: #F5AF02;
+          text-decoration: none;
+          color: $content-color;
+          border-radius: 10px 10px 0 0;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background: $kibana-bg-color;
+          }
+          &:active {
+            background-color: $kibana-bg-color;
+            box-shadow: none;
+          }
+          .menu-tab {
+            -webkit-appearance: none;
+            display: flex;
+            flex-direction: row;
+            height: 35px;
+            margin-right: 3px;
+            align-items: center;
+            .name {
+              color: $bg-color;
+              padding: 3px;
+            }
+          }
+        }
+        .feex{
+          margin-right: 1px;
+          height: 40px;
+          padding: 0px 15px;
+          -webkit-appearance: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          //background-color: $highlight-color;
+          background-color: #86B817;
+          text-decoration: none;
+          color: $content-color;
+          border-radius: 10px 10px 0 0;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background: $kibana-bg-color;
+          }
+          &:active {
+            background-color: $kibana-bg-color;
+            box-shadow: none;
+          }
+          .menu-tab {
+            -webkit-appearance: none;
+            display: flex;
+            flex-direction: row;
+            height: 35px;
+            margin-right: 3px;
+            align-items: center;
+            .name {
+              color: $bg-color;
+              padding: 3px;
+            }
+          }
+        }
+        .dashboard{
+          margin-right: 1px;
+          height: 40px;
+          padding: 0px 15px;
+          -webkit-appearance: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          //background-color: $highlight-color;
+          background-color: #E53238;
           text-decoration: none;
           color: $content-color;
           border-radius: 10px 10px 0 0;

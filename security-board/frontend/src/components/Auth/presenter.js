@@ -7,11 +7,9 @@ import SignupForm from 'components/SignupForm';
 const Auth = (props) => (
     <main className={styles.auth}>
         <div className={styles.column}>
-            <img src={require('images/meerkat.jpg')} alt='security manager' />
         </div>
         <div className={styles.column}>
             <div className={`${styles.whiteBox} ${styles.formBox}`}>
-                <img src={require('images/logo.png')} alt='logo' />
                 {props.action === 'login' && <LoginForm />}
                 {props.action === 'signup' && <SignupForm />}
             </div>
@@ -43,16 +41,6 @@ const Auth = (props) => (
                 <span>
                     ETAS 연락처
                 </span>
-                <div className={styles.contacts}>
-                    <img
-                        src={require('images/contact_1.png')}
-                        alt='manager contact'
-                    />
-                    <img
-                        src={require('images/contact_2.png')}
-                        alt='manager contact'
-                    />
-                </div>
             </div>
         </div>
     </main>

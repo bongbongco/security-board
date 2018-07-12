@@ -4,8 +4,8 @@
     flex-direction: column;
     max-width: $max-page-width + 80px;
     width: 100%;
-    margin: 0px auto;
-    padding-top: 10px;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
     align-items: center;
     border-radius: 0px 10px 10px 10px;
     .dashboard {
@@ -20,15 +20,5 @@
         @include breakpoint("phone") {
             background-color: transparent;
         }
-    }
-    .info {
-        background-color: $kibana-content-color;
-        display: flex;
-        flex-direction: column;
-        max-width: $max-page-width + 80px;
-        margin: 10px auto;
-        width: 100%;
-        height: $kibana-discover-height;
-        align-items: center;
     }
 }

@@ -4,8 +4,8 @@
     box-sizing: border-box;
     background-color: $bg-color;
     margin: auto 0px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     align-items: center;
     justify-content: center;
     @include breakpoint("phone-tablet") {
@@ -19,34 +19,15 @@
       font-weight: 600;
       text-transform: uppercase;
       font-size: $small-font-size;
+      position: relative;
+
       .column {
         @include breakpoint("phone-tablet") {
           margin-bottom: 0;
         }
-        .nav {
-          .list {
-            display: flex;
-            //flex-wrap: wrap;
-            @include breakpoint("phone-tablet") {
-              justify-content: center;
-            }
-            .list-item {
-              margin-right: 15px;
-              @include breakpoint("phone-tablet") {
-                margin-bottom: 10px;
-                margin-right: 15px;
-              }
-              .link {
-                -webkit-appearance: none;
-                text-decoration: none;
-                color: $content-color;
-                &:hover {
-                  color: $highlight-color;
-                }
-              }
-            }
-          }
-        }
+       .copyright{
+         color: $content-color;
+       }
       }
     }
   }

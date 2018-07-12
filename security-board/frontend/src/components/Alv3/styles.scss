@@ -4,8 +4,9 @@
     flex-direction: column;
     max-width: $max-page-width + 80px;
     width: 100%;
+    height: 100%;
     margin: 0px auto;
-    padding-top: 10px;
+    padding: 10px 0px 10px 0px;
     align-items: center;
     border-radius: 0px 10px 10px 10px;
     .dashboard {
@@ -15,20 +16,10 @@
         max-width: $max-page-width + 80px;
         width: 100%;
         height: $kibana-visualize-height;
-        margin: 0 auto; 
+        margin: auto auto; 
         align-items: center;
         @include breakpoint("phone") {
             ckground-color: transparent;
         }
-    }
-    .info {
-        background-color: $kibana-content-color;
-        display: flex;
-        flex-direction: column;
-        max-width: $max-page-width + 80px;
-        margin: 10px auto;
-        width: 100%;
-        height: $kibana-discover-height;
-        align-items: center;
     }
 }
