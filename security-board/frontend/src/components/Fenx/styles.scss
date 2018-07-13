@@ -1,24 +1,6 @@
 .fenx {
-    background-color: $kibana-bg-color;
-    display: flex;
-    flex-direction: column;
-    max-width: $max-page-width + 80px;
-    width: 100%;
-    margin: 0px auto;
-    padding: 10px 0px 10px 0px;
-    align-items: center;
-    border-radius: 0px 10px 10px 10px;
+    @include dashboardFrameWrapper();
     .dashboard {
-        background-color: $kibana-content-color;
-        display: flex;
-        flex-direction: column;
-        max-width: $max-page-width + 80px;
-        width: 100%;
-        height: $kibana-visualize-height;
-        margin: 0px auto; 
-        align-items: center;
-        @include breakpoint("phone") {
-            ckground-color: transparent;
-        }
+        @include dashboardFrame();
     }
 }

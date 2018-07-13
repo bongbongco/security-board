@@ -43,18 +43,6 @@ const AdminContent = props => (
     </div>
 )
 
-/*
-const AdminContent = props => (
-    <div className={styles.contents}>
-        <div className={styles.notice}>
-            <BootstrapTable keyField='id' data={ products } columns={ columns } />
-        </div>
-        <div className={styles.commentBox}>
-        </div>
-    </div>
-)
-*/
-
 const LoadingContent = props => (
     <div className={styles.admin}>
         <Loading />

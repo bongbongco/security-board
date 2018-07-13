@@ -20,13 +20,16 @@
       text-transform: uppercase;
       font-size: $small-font-size;
       position: relative;
-
       .column {
         @include breakpoint("phone-tablet") {
           margin-bottom: 0;
         }
        .copyright{
-         color: $content-color;
+         .link{
+          -webkit-appearance: none;
+          text-decoration: none;
+          color: $content-color;
+         }
        }
       }
     }
