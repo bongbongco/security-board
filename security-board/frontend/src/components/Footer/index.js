@@ -7,8 +7,8 @@ const Footer = (props, context) => (
         <div className={styles.inner}>
             <div className={styles.column}>
                 <span className={styles.copyright}>
-                    <a href="" className={styles.link}>
-                        © LSY, 2018
+                    <a href="http://ebase.ebaykorea.com/my/pages/person.aspx?accountname=EBAYKOREA\sunghong" className={styles.link}>
+                        © IS team@Security, eBay Korea, 2018
                     </a>
                 </span>
             </div>

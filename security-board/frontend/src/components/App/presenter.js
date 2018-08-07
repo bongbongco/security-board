@@ -9,7 +9,6 @@ import Auth from 'components/Auth';
 import Feex from 'components/Feex';
 import Fenx from 'components/Fenx';
 import Alv3 from 'components/Alv3';
-import Admin from 'components/Admin';
 
 const App = props => [
     props.isLoggedIn ? <Navigation key={1} /> : null,
@@ -27,7 +26,6 @@ const PrivateRoutes = props => (
         <Route path="/fenx" component={Fenx} />
         <Route path="/feex" component={Feex} />
         <Route path="/alv3" component={Alv3} />
-        <Route path="/admin" component={Admin} />
     </Switch>
 )
 
