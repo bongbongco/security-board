@@ -32,7 +32,7 @@
     "jest": "20.0.4",
     "muicss": "^0.9.39-rc1",
     "namor": "^1.0.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
